@@ -7,4 +7,4 @@
 #macro DULL 3
 #macro GOOEY 4
 
-damageType = RUSTY;
+condition = RUSTY;

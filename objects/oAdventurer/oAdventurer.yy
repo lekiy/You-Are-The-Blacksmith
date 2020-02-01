@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oAdventurer",
     "eventList": [
-        
+        {
+            "id": "b72ef751-ceae-48e7-ae29-5da2e68a2055",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "b45ca47d-ac0e-496f-b681-80b9e7a2608d"
+        },
+        {
+            "id": "7c1ae2ce-36e5-48b6-9802-954e5ae9bdb0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "b45ca47d-ac0e-496f-b681-80b9e7a2608d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
