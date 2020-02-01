@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "61c061cb-19d2-48e4-9bbd-ef4baf2ef116",
+            "Value": {
+                "id": "48e5bcb1-2dd0-4f6c-a449-3ff758c45aba",
+                "resourcePath": "sprites\\sProgressBar\\sProgressBar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7149afe7-b55e-434a-a95f-55130b119a6c",
             "Value": {
                 "id": "f31b8aac-8cf5-4b0e-815f-2611fb32efa9",
