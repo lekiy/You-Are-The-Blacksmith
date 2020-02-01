@@ -1,0 +1,2 @@
+hasItem = false;
+containedItem = noone;
