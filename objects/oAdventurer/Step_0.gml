@@ -3,7 +3,7 @@
 if(heldItem != noone){
 	with(heldItem){
 		x = other.x;
-		y = other.y+heldYOffset;
+		y = other.y+other.heldYOffset;
 	}
 	
 	if(!serviced){
@@ -11,15 +11,19 @@ if(heldItem != noone){
 		targetPosition = get_drop_off_wait_pos(targetCounter);
 	}
 	if(x == targetPosition[0] && y == targetPosition[1]){
-		
+		with(heldItem){
+			x = other.targetCounter.x;
+			y = other.targetCounter.y;
+		}
+		heldItem = noone;
 	}else{
 		if(x != targetPosition[0]){
-			velX = sign(y-targetPosition[0])*moveSpeed;
+			velX = sign(targetPosition[0]-x)*moveSpeed;
 			x+=	velX;
 		}
 		if(y != targetPosition[1]){
-			velX = sign(y-targetPosition[1])*moveSpeed;
-			y+=	velX;
+			velY = sign(targetPosition[1]-y)*moveSpeed;
+			y+=	velY;
 		}
 	}
 	
