@@ -1,19 +1,10 @@
 {
-    "id": "a87f5346-a433-4dde-a699-4b03198a01d1",
+    "id": "b45ca47d-ac0e-496f-b681-80b9e7a2608d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oItem",
+    "name": "oAdventurer",
     "eventList": [
-        {
-            "id": "f465409d-82a1-4f64-85f7-56a53d7cf113",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "a87f5346-a433-4dde-a699-4b03198a01d1"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "8ae0c0ce-2ac6-4489-bf4a-2d4bc978ea22",
+    "spriteId": "1109d2b7-044c-48b6-ab95-c7d2b0c7b6a1",
     "visible": true
 }

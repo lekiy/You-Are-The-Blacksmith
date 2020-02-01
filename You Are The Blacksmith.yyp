@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "1109d2b7-044c-48b6-ab95-c7d2b0c7b6a1",
+            "Value": {
+                "id": "8ef6c430-60b1-4c46-a496-aab13881173d",
+                "resourcePath": "sprites\/sAdventurer\/sAdventurer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "22d59d45-19c8-499a-abcb-cb6144fbc2f3",
             "Value": {
                 "id": "8dcf6466-4b5e-4ea3-94ee-8e71d64208eb",
@@ -244,6 +252,14 @@
                 "id": "d16d7833-fd1c-44a0-89d7-9dac34fa9dc0",
                 "resourcePath": "scripts\/grid_to_pos_y\/grid_to_pos_y.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b45ca47d-ac0e-496f-b681-80b9e7a2608d",
+            "Value": {
+                "id": "5819a284-df6a-422c-8216-39b97a9e8ef2",
+                "resourcePath": "objects\/oAdventurer\/oAdventurer.yy",
+                "resourceType": "GMObject"
             }
         },
         {
