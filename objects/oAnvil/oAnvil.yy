@@ -1,5 +1,5 @@
 {
-    "id": "63e7ae20-4fbd-421a-8799-7fd87171b4d7",
+    "id": "199b1a85-e937-419d-81be-1ab0debfcd2b",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "oAnvil",
@@ -8,7 +8,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "299f48e7-980e-47a8-a020-eb25ace5966b",
+    "parentObjectId": "c51fb917-0505-4442-86f2-25526c76fe2f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "4fd100f3-633a-49e1-8dc1-475aa8139b73",
     "visible": true
 }
