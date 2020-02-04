@@ -4,8 +4,7 @@ enum state {
 	holding,
 	working
 }
-
-
+image_speed = 0;
 
 dirH = 0;
 dirV = 0;
@@ -14,8 +13,7 @@ velY = 0;
 
 spriteDir = 1;
 
-
-moveSpeed = 120/room_speed;
+moveSpeed = 100/room_speed;
 
 hasAction = false;
 
@@ -26,5 +24,7 @@ highlight = 0;
 
 facingDirH = 0;
 facingDirV = 0;
+
+usingStation = false;
 
 currentState = state.idling;

@@ -8,15 +8,18 @@
 #macro GOOEY 4
 
 
-rust = 4;
-
+rust = irandom_range(2, 4);
+heat = 0;
 
 condition = RUSTY;
 
 
+item_i = irandom(7)
 
-swordImg[NO_DAMAGE] = sSword;
-swordImg[RUSTY] = sSwordBroken;
+swordImg[NO_DAMAGE] = item_i;
+swordImg[RUSTY] = item_i+8;
 
-sprite_index = swordImg[condition];
+
+sprite_index = sWeapon;
+image_index = swordImg[condition];
 

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oAnvil",
     "eventList": [
-        
+        {
+            "id": "213fc4a7-146e-4338-97e6-4e5b813ba96d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "199b1a85-e937-419d-81be-1ab0debfcd2b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -2,52 +2,54 @@
 // You can write your code in this editor
 depth = -y;
 
+if(!serviced){
+	if(targetCounter == noone){
+		targetCounter = get_available_counter();
+		targetCounter.isAvailable = false;
+	}else{
+		var target = get_drop_off_wait_pos(targetCounter);
+		if(move_to_point(target[0], target[1]) && heldItem != noone){
+			if(!targetCounter.isFull){
+				targetCounter.containedItem = heldItem;
+				targetCounter.isFull = true;
+				heldItem = noone;
+				hasItem = false;
+				
+				audio_play_varried(grumbles[irandom(2)], 7, false, .1);
+				audio_play_varried(sndDropOff1, 6, false, .1);
+				
+			}
+		}else if(targetCounter.isFull){
+			if(targetCounter.containedItem.condition == NO_DAMAGE && targetCounter.containedItem.heat < 0.1){
+				serviced = true;
+				global.gold+=payVal;
+				audio_play_varried(sndPickup1, 3, false, 0.1);
+				if(payVal >= 5){
+					audio_play_varried(sndCoin2, 5, false, 0.1);
+				}else audio_play_varried(sndCoin, 5, false, .1);
+				global.customersServed++;
+				targetCounter.isAvailable = true;
+				heldItem = targetCounter.containedItem;
+				hasItem = true;
+				targetCounter.containedItem = noone;
+				targetCounter.isFull = false;	
+			}
+		}else{
+			image_speed = 1;	
+		}
+	}
+}else{
+	move_to_point(-100, random(room_height));
+	
+}
+
 if(heldItem != noone){
 	with(heldItem){
 		x = other.x;
 		y = other.y+other.heldYOffset;
 	}
-	
-	if(targetCounter == noone){
-		targetCounter = get_available_counter();
-		targetPosition = get_drop_off_wait_pos(targetCounter);
-	}
-	if(x == targetPosition[0] && y == targetPosition[1]){
-<<<<<<< HEAD
-		show_debug_message("1");
-		if(!targetCounter.isFull){
-			show_debug_message("2");
-			targetCounter.containedItem = heldItem;
-			targetCounter.isFull = true;
-			heldItem = noone;
-			hasItem = false;
-		}else{
-			show_debug_message("3");
-			if(targetCounter.containedItem.condition == NO_DAMAGE){
-				heldItem = targetCounter.containedItem;
-				hasItem = true;
-				targetCounter.containedItem = noone;
-				targetCounter.isFull = false;
-				targetPosition = [-100, random(room_height)];
-			}
-=======
-		ds_grid_set(global.objectGrid, pos_to_grid_x(targetCounter.x), pos_to_grid_y(targetCounter.y), heldItem);
-		with(heldItem){
-			x = grid_to_pos_x(pos_to_grid_x(other.targetCounter.x))+TILESIZE/2;
-			y = grid_to_pos_y(pos_to_grid_y(other.targetCounter.y))+TILESIZE/2;
->>>>>>> 6a5cefc9916deb288045707e8539916deb935c22
-		}
-	}else{
-		show_debug_message("4");
-		if(x != targetPosition[0]){
-			velX = sign(targetPosition[0]-x)*moveSpeed;
-			x+=	velX;
-		}
-		if(y != targetPosition[1]){
-			velY = sign(targetPosition[1]-y)*moveSpeed;
-			y+=	velY;
-		}
-	}
-	
 }
 
+if(x < -80){
+	instance_destroy();
+}
