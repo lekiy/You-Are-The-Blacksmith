@@ -1,3 +1,12 @@
+
+enum state {
+	idling,
+	holding,
+	working
+}
+
+
+
 dirH = 0;
 dirV = 0;
 velX = 0;
@@ -15,6 +24,7 @@ heldItem = noone;
 heldYOffset = -10;
 highlight = 0;
 
-
 facingDirH = 0;
 facingDirV = 0;
+
+currentState = state.idling;

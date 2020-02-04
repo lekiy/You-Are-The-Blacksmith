@@ -43,6 +43,22 @@
             }
         },
         {
+            "Key": "1109d2b7-044c-48b6-ab95-c7d2b0c7b6a1",
+            "Value": {
+                "id": "8ef6c430-60b1-4c46-a496-aab13881173d",
+                "resourcePath": "sprites\/sAdventurer\/sAdventurer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "199b1a85-e937-419d-81be-1ab0debfcd2b",
+            "Value": {
+                "id": "e2410d7f-cc4c-4ce3-be14-8cf81e75be7f",
+                "resourcePath": "objects\/oAnvil\/oAnvil.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "22d59d45-19c8-499a-abcb-cb6144fbc2f3",
             "Value": {
                 "id": "8dcf6466-4b5e-4ea3-94ee-8e71d64208eb",
@@ -91,6 +107,22 @@
             }
         },
         {
+            "Key": "329b1817-b4de-4897-bf81-c90e217b601e",
+            "Value": {
+                "id": "10af0656-8555-4dbe-a9b6-6675859883d4",
+                "resourcePath": "sprites\/sSwordBroken\/sSwordBroken.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3651e39c-a072-4e2d-8264-fe842a5bbba1",
+            "Value": {
+                "id": "47b10710-fdbb-4463-b68f-534b90e855d7",
+                "resourcePath": "scripts\/place_item\/place_item.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3c93d261-9735-4e75-866c-f7ecb68523c4",
             "Value": {
                 "id": "1b489e7b-1854-40af-be04-322cf102ed0b",
@@ -120,6 +152,14 @@
                 "id": "bc62105e-60ec-4f53-8e48-0fc8c0aa6af4",
                 "resourcePath": "views\/49065143-76bd-4780-9f59-2c818cd33f7f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4fd100f3-633a-49e1-8dc1-475aa8139b73",
+            "Value": {
+                "id": "ae8ed228-1608-4eae-b677-235b36f8ddc1",
+                "resourcePath": "sprites\/sAnvil\/sAnvil.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -251,6 +291,14 @@
             }
         },
         {
+            "Key": "b45ca47d-ac0e-496f-b681-80b9e7a2608d",
+            "Value": {
+                "id": "5819a284-df6a-422c-8216-39b97a9e8ef2",
+                "resourcePath": "objects\/oAdventurer\/oAdventurer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b6b540a4-eb05-4bf9-8a78-65ecaf4e1b74",
             "Value": {
                 "id": "df5fe47c-0445-4205-8593-c75372cff496",
@@ -264,6 +312,22 @@
                 "id": "f5e35036-7b59-4983-bee8-447135eb3a33",
                 "resourcePath": "views\/b70efc47-9105-47cd-aa59-0c2606656e63.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c51fb917-0505-4442-86f2-25526c76fe2f",
+            "Value": {
+                "id": "19c35bea-83b8-4a26-a465-d6a3299b560c",
+                "resourcePath": "objects\/oStation\/oStation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c751b20a-ec95-41fd-95c5-69e10050e6d4",
+            "Value": {
+                "id": "815b0b50-327c-4fdd-b873-5dcf9206cec1",
+                "resourcePath": "scripts\/get_available_counter\/get_available_counter.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -313,6 +377,14 @@
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "f8da477a-7ca1-43e5-8e2b-8b68caa5a131",
+            "Value": {
+                "id": "afbd1579-b957-410a-aa86-7621f98c251a",
+                "resourcePath": "scripts\/get_drop_off_wait_pos\/get_drop_off_wait_pos.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -320,7 +392,10 @@
         "f1e1ac04-11dc-4f98-879a-6a97c9353c9c",
         "aeea26ae-a02a-42e5-a06a-db680313a0a3",
         "99915ecc-35f5-4b80-a66c-dddd16db480b",
-        "af46d79d-f7d8-4b8d-9ab3-1b824ece8866"
+        "af46d79d-f7d8-4b8d-9ab3-1b824ece8866",
+        "c751b20a-ec95-41fd-95c5-69e10050e6d4",
+        "f8da477a-7ca1-43e5-8e2b-8b68caa5a131",
+        "3651e39c-a072-4e2d-8264-fe842a5bbba1"
     ],
     "tutorial": ""
 }
