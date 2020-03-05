@@ -1,10 +1,13 @@
 
+
+
 enum state {
 	idling,
 	holding,
 	working
 }
 image_speed = 0;
+
 
 dirH = 0;
 dirV = 0;

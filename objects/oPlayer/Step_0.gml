@@ -3,8 +3,8 @@
 depth = -y;
 
 if(!usingStation){
-	dirH = keyboard_check(vk_right)-keyboard_check(vk_left);
-	dirV = keyboard_check(vk_down)-keyboard_check(vk_up);
+	dirH = check_input(input.RIGHT)-check_input(input.LEFT);
+	dirV = check_input(input.DOWN)-check_input(input.UP);
 
 	velX = dirH*moveSpeed;
 	velY = dirV*moveSpeed;
@@ -36,7 +36,7 @@ if(!usingStation){
 	}
 	handle_wall_collision();
 
-	if(keyboard_check_pressed(ord("X"))){
+	if(check_input_pressed(input.ACTION1)){
 		if(heldItem == noone){
 			heldItem = instance_place(x+facingDirH*TILESIZE/2, y+facingDirV*TILESIZE/2, oItem);
 			if(instance_place(x+facingDirH*TILESIZE/2, y+facingDirV*TILESIZE/2, oStation) != noone){
@@ -75,7 +75,7 @@ if(!usingStation){
 	}
 
 }
-if(keyboard_check_pressed(ord("Z"))){
+if(check_input_pressed(input.ACTION2)){
 	
 	if(heldItem == noone){
 		if(instance_place(x+facingDirH*TILESIZE/2, y+facingDirV*TILESIZE/2, oStation) != noone){
